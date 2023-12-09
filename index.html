@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>按钮跳转网页</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>按钮跳转网页</h1>
+  <input type="text" id="unusedInput" placeholder="输入你要跳转的网址！">
+  <br>
+  <button onclick="redirectToPage()">跳转到指定网页</button>
+
+  <script>
+    function redirectToPage() {
+      // 这里是要跳转的网页链接
+      var url = "/redirectstep2"; // 请替换成你想要跳转的网页链接
+
+      // 使用 window.location.href 跳转到指定网页
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
